@@ -150,6 +150,10 @@ ul{
     cursor: pointer;
 }
 
+.page-buttom-content{
+    min-width: 780px;
+}
+
 .page-buttom-content-left {
     width: 60%;
     float: left;
@@ -164,6 +168,10 @@ ul{
     float: left;
     margin-left: 4%;
     margin-top: 10px;
+}
+
+.page-buttom-content-right ul{
+    min-width: 200px;
 }
 
 .page-buttom-content-right li{
