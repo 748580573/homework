@@ -190,6 +190,8 @@ li{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 30px;
     width: 110px;
 }
@@ -251,6 +253,7 @@ li{
 .buttom-menu-content-div2-menu li:hover{
     background-color: rgba(58,139,187,0.15);
     color: #3a8bbb;
+    cursor: pointer;
 }
 
 .buttom-menu-content-div3{
@@ -291,9 +294,9 @@ li{
 .buttom-content{
     min-width: 1260px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #f4f4f4;
-    height: 800px;
 }
 
 .buttom-content-div{
@@ -303,35 +306,66 @@ li{
 .buttom-content-div-border{
     padding-top:30px;
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buttom-content-div-border-img{
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: white;
     width: 322px;
     height: 240px;
     margin-left: 32px;
     position: relative;
+    overflow: hidden;
 }
 
 .buttom-content-div-border-img-tip{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 302px ;
-    padding-left: 10px;
-    padding-right: 10px;
+    bottom: -40px;
+    width: 300px;
+    padding-right:10px;
+    padding-left:10px;
     background-color: white;
-
+    height:50px;
+    justify-content: space-between;
+    align-items: center;
+    transition: linear 0.3s;
 }
 
 .buttom-content-div-border-img:hover .buttom-content-div-border-img-tip{
+    bottom: 0px;
+    
+}
+
+
+.buttom-content-div-border-img-tip-right{
     display: flex;
-    transition:2s;
     justify-content: space-between;
     align-items: center;
+    width: 100px;
 }
+
+.buttom-content-div-border-img-tip-right{
+    display: flex;
+
+}
+
+
+/* .buttom-content-div-border-img:hover .buttom-content-div-border-img-tip-right{
+    display: flex;
+}
+
+
+.buttom-content-div-border-img:hover .buttom-content-div-border-img-tip-left{
+    display: block
+}  */
 
 .save{
     width: 46px;
@@ -366,7 +400,7 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    clear: both;
+    background-color: white;
 }
 
 .sign-in-up{
